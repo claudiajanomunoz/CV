@@ -1,0 +1,278 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{tabularx}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{ragged2e}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeSubheadingtwo}[2]{
+  \vspace{-1pt}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+\textbf{\Huge Clàudia Janó Muñoz}\\
+\end{center}
+\begin{tabular*}{\textwidth}{l}
+Email: \href{mailto:claudia.jano@student.manchester.ac.uk}{claudia.jano@student.manchester.ac.uk}\\
+Mobile: +44 7935493960\\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {MPhys Physics with Astrophysics}{Manchester, UK}{University of Manchester}{Sep. 2018 - Present}
+        \resumeItemListStart
+            \resumeItem{Course performance:}
+                {69\% average in Year 1, 74.4\% average in Year 2 and 77.6\% average in Year 3.}
+            \resumeItem{Relevant coursework:}
+                {Introduction to Astrophysics, Physics of the Solar System, Galaxies, Astrophysical Processes, Nuclear Fusion and Astrophysical Plasmas, Cosmology, Stars and Stellar Evolution, Exoplanets, Radio Astronomy, Gravitation, Advanced Statistical Physics}
+            \resumeItem{Scholarships:}
+                {Physics Success Scholarship (Dec. 2018)}
+        \resumeItemListEnd
+    \resumeSubheading
+      {Título de Bachiller (A-level equivalent)}{Badalona, Barcelona, Spain}
+      {Escola Garbí Pere Vergés}{2016 - 2018}
+      \resumeItemListStart
+        \resumeItem {Performance:}
+        {96.5\% average in Bachiller including 100\% in Physics, Mathematics, Chemistry and English. 90\% average in PAU (national examinations) including 100\% in Physics}
+        \resumeItem {Awards:}
+        {PAU Distinction for results in national examinations by the \textit{Generalitat de Catalunya} (Government of Catalonia) }
+       \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading{Machine learning in spectra analysis from ALMA observations}
+    {University of Manchester, UK}
+    {MPhys Project supervised by Prof Gary Fuller}{Sept. 2021 - Present}
+      \resumeItemListStart
+        \resumeItem{\normalfont Currently developing a machine learning model to analyse molecular spectra around protostellar regions.}
+          {}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+    \resumeSubheading{Simulating the effects of close stellar encounters}
+    {Universitat Autònoma de Barcelona, Spain}
+    {Research project supervised by Dr Ignasi Ribas}{Sept. 2021 - Oct. 2021}
+      \resumeItemListStart
+        \resumeItem{\normalfont Implemented an N-body simulation of the Oort cloud based on current structure models.}
+          {}
+        \resumeItem{\normalfont Simulated the evolution of Oort cloud comets during past and future close encounters between the Sun and nearby stars using the REBOUND Python library.}
+          {}
+        \resumeItem{\normalfont Modelled the spread of intelligent life in the Milky Way using stellar encounter statistics, planet population studies and pandemic spread models.}
+          {}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+     \resumeSubheading{Exoplanet atmospheric evolution with machine learning}
+      {Imperial College London, UK}
+      {UROP Summer Internship supervised by Dr James Owen}{June 2021 - Aug. 2021}
+      \resumeItemListStart
+        \resumeItem{\normalfont Developed a classical machine learning model to emulate the effects of photoevaporation on exoplanet evolution.}
+          {}
+        \resumeItem{\normalfont Applied algorithms such as Random Forests and Support Vector Machines to build a Super-Earth/Sub-Neptune classifier and a regressor to predict evolved exoplanet radii.}
+          {}
+        \resumeItem{\normalfont Inferred the initial conditions of the observed exoplanets Kepler-36b and Kepler-36c using Markov Chain Monte Carlo techniques and Bayesian statistics.}
+          {}
+        \resumeItem{\normalfont Gained knowledge of current planet formation and evolution models and participated in paper discussions within the Imperial Astrophysics group.}
+          {}
+        \resumeItem{\normalfont Generated training data with the DiRAC supercomputer and achieved 99\% accuracy on emulating exoplanet population evolution, decreasing computing time by a factor of 400.}
+          {}
+        \resumeItem{\normalfont Presented the results to the atmospheric escape group of the University of California Santa Cruz and the ICL planets and stars group.}{}
+        \resumeItem{\normalfont Method and results submitted for publication, to be peer-reviewed.}
+          {\normalfont}
+      \resumeItemListEnd
+   \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+     \resumeSubheading{Z and Higgs boson cross section measurements}
+      {University of Manchester, UK}
+      {3rd Year Laboratory Experiment supervised by Prof Terry Wyatt}{March 2021 - May 2021}
+      \resumeItemListStart
+        \resumeItem{\normalfont Calculated the cross section of the leptonic decays of Z and Higgs bosons using data from the ATLAS detector at CERN and obtained results within one standard deviation from literature.}
+          {}
+        \resumeItem{\normalfont Used analysis and programming tools used in CERN such as ROOT and Monte Carlo simulations.}
+          {}
+        \resumeItem{\normalfont Devised a user-friendly skeleton code structure to be implemented by the university across all codes for this experiment.}
+          {}
+        \resumeItem{\normalfont Presented the results and was graded 85\%.}
+          {}
+      \resumeItemListEnd
+   \resumeSubHeadingListEnd
+   \resumeSubHeadingListStart
+   \resumeSubheading{Crab Pulsar timing}
+      {University of Manchester, UK}
+      {3rd Year Laboratory Experiment supervised by Dr Patrick Weltevrede}{Oct. 2020 - Nov. 2020}
+      \resumeItemListStart
+        \resumeItem{\normalfont Calculated the distance to, period, period derivative and magnetic field of the Crab Pulsar.}
+          {}
+        \resumeItem{\normalfont Scheduled remote observations of pulsars with the 42-ft radio telescope at the Jodrell Bank Observatory.}
+          {}
+        \resumeItem{\normalfont Developed code to analyse pulse timing data from known pulsars using techniques such as Fourier analysis and polynomial interpolations.}
+          {}
+        \resumeItem{\normalfont Gained experience presenting results in a scientific manner and was graded 75\%.}
+          {}
+      \resumeItemListEnd
+   \resumeSubHeadingListEnd
+   \resumeSubHeadingListStart
+   \resumeSubheading{Reconstructing the orbit of the P/2010 P4 WISE comet}
+      {Badalona, Spain}
+      {Research Project}{Sep. 2016 - Sep. 2017}
+      \resumeItemListStart
+        \resumeItem{\normalfont Measured the comet's eccentricity, period, semi-major axis and inclination from past position observations.}
+          {}
+        \resumeItem{\normalfont Gained experience using basic observation tools such as astronomical databases and coordinate systems.}
+          {}
+        \resumeItem{\normalfont Learned about celestial mechanics and Keplerian motion and its applications in the trajectory of a comet.}
+          {}
+        \resumeItem{\normalfont Presented in front of a jury and was graded 100\%.}
+          {}
+      \resumeItemListEnd
+   \resumeSubHeadingListEnd
+
+%-----------Extracurricular Activity-----------------
+
+\section{Skills}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Computational skills} \vspace{-5pt}
+\resumeItemListStart
+\resumeItem
+{\normalfont Proficient in Python for data analysis and experienced in machine learning, Python GUIs and CERN's data analysis framework, ROOT.}{}
+\resumeItem
+{\normalfont Confident in LaTeX for scientific writing.}{}
+\resumeItem
+{\normalfont Limited experience in Windows Subsystem for Linux (WSL) and High Performance Computing usage.}{}
+\resumeItemListEnd
+\end{itemize}
+
+\begin{itemize}[leftmargin=*]
+\item \textbf{Hardware skills} \vspace{-5pt}
+\resumeItemListStart
+\resumeItem
+{\normalfont Experience with general undergraduate laboratory equipment such as: circuit components, oscilloscopes and digital controller systems; lenses, light sources and other optical devices; and various other miscellaneous equipment like hot metals and heating sources.}{}
+\resumeItem
+{\normalfont Experience with some special equipment such as: optical telescopes for lunar observations; remote control of the 42ft telescope at JBCA for pulsar observations; and low radioactive sources for gamma-ray spectroscopy.}{}
+\resumeItemListEnd
+\end{itemize}
+
+\begin{itemize}[leftmargin=*]
+\item \textbf{Languages} \vspace{-5pt}
+\resumeItemListStart
+\resumeItem
+{\normalfont Native speaker: Spanish and Catalan}{}
+\resumeItem
+{\normalfont Proficient: English}{}
+\resumeItem
+{\normalfont Elementary level: German (A2)}{}
+\resumeItemListEnd
+\end{itemize}
+
+%-------------------------------------------
+
+%--------PUBLICATIONS------------
+\section{Publications}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Submitted for peer-review} \vspace{-5pt}
+\resumeItemListStart
+\resumeItem
+{\normalfont \textit{Exoplanet atmosphere evolution: emulation with random forests}, submitted to MNRAS. Accessible from arXiv: https://arxiv.org/abs/2110.15162}{}
+\resumeItemListEnd
+\end{itemize}
+
+\section{Extracurricular Activities}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Manchester Astronomy Society}{Manchester, UK}
+      {Chair}{May 2021 - Present}
+      \resumeItemListStart
+        \resumeItem
+          {\normalfont Supervised a student committee and took responsibility in organisation and safety procedures.}{}
+        \resumeItem
+          {\normalfont Managed social media and event scheduling.}{}
+        \resumeItem
+          {\normalfont Participated in the creation of the Science Union, an outreach and social organisation aimed at natural sciences students.}{}
+      \resumeItemListEnd
+    \resumeSubheadingtwo
+      {Science Officer}{Feb. 2020 - May 2021}
+      \resumeItemListStart
+        \resumeItem
+          {\normalfont Organised and hosted the Stellar Lecture Series for undergraduate students:  biweekly lectures delivered by researchers about current topics in astrophysics and cosmology.}{}
+        \resumeItem
+          {\normalfont Gained experience hosting professionals and organisations, such as the Institute of Physics and Dame Jocelyn Bell-Burnell.}{}
+        \resumeItem
+          {\normalfont Planned and supervised social events such as weekly stargazing nights.}{}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+  
+%--------SKILLS------------
+
+
+\end{document}
