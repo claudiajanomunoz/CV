@@ -1,278 +1,208 @@
-\documentclass[letterpaper,11pt]{article}
-\usepackage{tabularx}
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage{ragged2e}
-\usepackage[english]{babel}
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{natbib}
+\usepackage{amssymb, amsmath}
+\usepackage{xcolor}
 
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+\usepackage[colorlinks=True,urlcolor=blue]{hyperref}
+\usepackage{array} % for defining new column types
+\usepackage{fontawesome} % for icons
+\usepackage{comment} % for commenting out sections
+\usepackage{titlesec} % for custom section titles
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+% Define new column types for the tables
+\newcolumntype{L}{>{\raggedleft}p{0.175\textwidth}}
+\newcolumntype{R}{p{0.765\textwidth}}
 
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{ #2 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
-}
-
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
-
-\renewcommand{\labelitemii}{$\circ$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-\newcommand{\resumeSubheadingtwo}[2]{
-  \vspace{-1pt}
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-5pt}
-}
-
-%-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% Custom section titles
+\titleformat{\section}{\Large\bfseries}{\thesection}{}{}[{\titlerule[0.5pt]}]
+\titleformat{\subsection}{\normalsize\bfseries}{\thesection}{}{}
 
 \begin{document}
 
-%----------HEADING-----------------
+\small % Reduce font size for the whole document
+
+%\begin{flushright}
+%  \footnotesize
+%  \textbf{Version v2.3}
+%\end{flushright}
+
 \begin{center}
-\textbf{\Huge Clàudia Janó Muñoz}\\
+\huge
+\textbf{Clàudia Janó Muñoz} \\
+\normalsize
+PhD student - University of Cambridge \\
 \end{center}
-\begin{tabular*}{\textwidth}{l}
-Email: \href{mailto:claudia.jano@student.manchester.ac.uk}{claudia.jano@student.manchester.ac.uk}\\
-Mobile: +44 7935493960\\
-\end{tabular*}
 
+\begin{minipage}[ht]{0.6\linewidth}
+	\faEnvelope~~\textbf{Email}: cj467@cam.ac.uk / claudiajano0@gmail.com\\
+	\faGithub~~\textbf{Github:} \href{https://github.com/claudiajanomunoz}{github.com/claudiajanomunoz}\\
+	\faGlobe~~\textbf{Website:} \href{https://claudiajanomunoz.github.io}{claudiajanomunoz.github.io} \\
+  \faPhone~~\textbf{Mobile:} +44(0)7935493960 \\
+  \faMapMarker~~\textbf{Address:} 19, J J Thomson Avenue, Cambridge, CB3 0FA, UK \\
+  \textbf{Date of Birth:} 30/11/2000 \\
+  \textbf{Nationality:} Spanish \\
+\end{minipage}
+\begin{minipage}[ht]{0.34\linewidth}
+	\begin{flushright}
+    \textbf{ORCID:} \href{https://orcid.org/0009-0008-5713-0750}{0009-0008-5713-0750} \\
+    \textbf{arXiv:} \href{http://arxiv.org/a/janomunoz_c_1}{janomunoz\_c\_1} \\
+    \textbf{Google Scholar:} \href{https://scholar.google.com/citations?user=7sh8LMYAAAAJ&hl=en&oi=sra}{Clàudia Janó Muñoz} \\
+    \textbf{NASA/ADS:} \href{https://ui.adsabs.harvard.edu/search/q=author%3A%22Janó%20Muñoz%2C%20C.%22&sort=date%20desc%2C%20bibcode%20desc&p_=0}{Clàudia Janó Muñoz} \\
+	\end{flushright}
+\end{minipage}
 
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {MPhys Physics with Astrophysics}{Manchester, UK}{University of Manchester}{Sep. 2018 - Present}
-        \resumeItemListStart
-            \resumeItem{Course performance:}
-                {69\% average in Year 1, 74.4\% average in Year 2 and 77.6\% average in Year 3.}
-            \resumeItem{Relevant coursework:}
-                {Introduction to Astrophysics, Physics of the Solar System, Galaxies, Astrophysical Processes, Nuclear Fusion and Astrophysical Plasmas, Cosmology, Stars and Stellar Evolution, Exoplanets, Radio Astronomy, Gravitation, Advanced Statistical Physics}
-            \resumeItem{Scholarships:}
-                {Physics Success Scholarship (Dec. 2018)}
-        \resumeItemListEnd
-    \resumeSubheading
-      {Título de Bachiller (A-level equivalent)}{Badalona, Barcelona, Spain}
-      {Escola Garbí Pere Vergés}{2016 - 2018}
-      \resumeItemListStart
-        \resumeItem {Performance:}
-        {96.5\% average in Bachiller including 100\% in Physics, Mathematics, Chemistry and English. 90\% average in PAU (national examinations) including 100\% in Physics}
-        \resumeItem {Awards:}
-        {PAU Distinction for results in national examinations by the \textit{Generalitat de Catalunya} (Government of Catalonia) }
-       \resumeItemListEnd
-  \resumeSubHeadingListEnd
+\section*{Education}
+\begin{tabular}{L!{\vrule}R}
+	2022 - \textit{est. May 2026} & \textbf{PhD in Physics}, \textit{Search for exoplanets around M-dwarfs with the CMOS infrarred detector SPIRIT.}, Cavendish Laboratory, University of Cambridge. Supervised by Prof. Didier Queloz and Dr. Matthew Hooton. \\
+	2018 - 2022 & \textbf{MPhys Physics with Astrophysics} First Class, University of Manchester.  \\
+\end{tabular}
 
-%-----------EXPERIENCE-----------------
-\section{Experience}
-\resumeSubHeadingListStart
-    \resumeSubheading{Machine learning in spectra analysis from ALMA observations}
-    {University of Manchester, UK}
-    {MPhys Project supervised by Prof Gary Fuller}{Sept. 2021 - Present}
-      \resumeItemListStart
-        \resumeItem{\normalfont Currently developing a machine learning model to analyse molecular spectra around protostellar regions.}
-          {}
-      \resumeItemListEnd
-    \resumeSubHeadingListEnd
-    \resumeSubHeadingListStart
-    \resumeSubheading{Simulating the effects of close stellar encounters}
-    {Universitat Autònoma de Barcelona, Spain}
-    {Research project supervised by Dr Ignasi Ribas}{Sept. 2021 - Oct. 2021}
-      \resumeItemListStart
-        \resumeItem{\normalfont Implemented an N-body simulation of the Oort cloud based on current structure models.}
-          {}
-        \resumeItem{\normalfont Simulated the evolution of Oort cloud comets during past and future close encounters between the Sun and nearby stars using the REBOUND Python library.}
-          {}
-        \resumeItem{\normalfont Modelled the spread of intelligent life in the Milky Way using stellar encounter statistics, planet population studies and pandemic spread models.}
-          {}
-      \resumeItemListEnd
-    \resumeSubHeadingListEnd
-  \resumeSubHeadingListStart
-     \resumeSubheading{Exoplanet atmospheric evolution with machine learning}
-      {Imperial College London, UK}
-      {UROP Summer Internship supervised by Dr James Owen}{June 2021 - Aug. 2021}
-      \resumeItemListStart
-        \resumeItem{\normalfont Developed a classical machine learning model to emulate the effects of photoevaporation on exoplanet evolution.}
-          {}
-        \resumeItem{\normalfont Applied algorithms such as Random Forests and Support Vector Machines to build a Super-Earth/Sub-Neptune classifier and a regressor to predict evolved exoplanet radii.}
-          {}
-        \resumeItem{\normalfont Inferred the initial conditions of the observed exoplanets Kepler-36b and Kepler-36c using Markov Chain Monte Carlo techniques and Bayesian statistics.}
-          {}
-        \resumeItem{\normalfont Gained knowledge of current planet formation and evolution models and participated in paper discussions within the Imperial Astrophysics group.}
-          {}
-        \resumeItem{\normalfont Generated training data with the DiRAC supercomputer and achieved 99\% accuracy on emulating exoplanet population evolution, decreasing computing time by a factor of 400.}
-          {}
-        \resumeItem{\normalfont Presented the results to the atmospheric escape group of the University of California Santa Cruz and the ICL planets and stars group.}{}
-        \resumeItem{\normalfont Method and results submitted for publication, to be peer-reviewed.}
-          {\normalfont}
-      \resumeItemListEnd
-   \resumeSubHeadingListEnd
-  \resumeSubHeadingListStart
-     \resumeSubheading{Z and Higgs boson cross section measurements}
-      {University of Manchester, UK}
-      {3rd Year Laboratory Experiment supervised by Prof Terry Wyatt}{March 2021 - May 2021}
-      \resumeItemListStart
-        \resumeItem{\normalfont Calculated the cross section of the leptonic decays of Z and Higgs bosons using data from the ATLAS detector at CERN and obtained results within one standard deviation from literature.}
-          {}
-        \resumeItem{\normalfont Used analysis and programming tools used in CERN such as ROOT and Monte Carlo simulations.}
-          {}
-        \resumeItem{\normalfont Devised a user-friendly skeleton code structure to be implemented by the university across all codes for this experiment.}
-          {}
-        \resumeItem{\normalfont Presented the results and was graded 85\%.}
-          {}
-      \resumeItemListEnd
-   \resumeSubHeadingListEnd
-   \resumeSubHeadingListStart
-   \resumeSubheading{Crab Pulsar timing}
-      {University of Manchester, UK}
-      {3rd Year Laboratory Experiment supervised by Dr Patrick Weltevrede}{Oct. 2020 - Nov. 2020}
-      \resumeItemListStart
-        \resumeItem{\normalfont Calculated the distance to, period, period derivative and magnetic field of the Crab Pulsar.}
-          {}
-        \resumeItem{\normalfont Scheduled remote observations of pulsars with the 42-ft radio telescope at the Jodrell Bank Observatory.}
-          {}
-        \resumeItem{\normalfont Developed code to analyse pulse timing data from known pulsars using techniques such as Fourier analysis and polynomial interpolations.}
-          {}
-        \resumeItem{\normalfont Gained experience presenting results in a scientific manner and was graded 75\%.}
-          {}
-      \resumeItemListEnd
-   \resumeSubHeadingListEnd
-   \resumeSubHeadingListStart
-   \resumeSubheading{Reconstructing the orbit of the P/2010 P4 WISE comet}
-      {Badalona, Spain}
-      {Research Project}{Sep. 2016 - Sep. 2017}
-      \resumeItemListStart
-        \resumeItem{\normalfont Measured the comet's eccentricity, period, semi-major axis and inclination from past position observations.}
-          {}
-        \resumeItem{\normalfont Gained experience using basic observation tools such as astronomical databases and coordinate systems.}
-          {}
-        \resumeItem{\normalfont Learned about celestial mechanics and Keplerian motion and its applications in the trajectory of a comet.}
-          {}
-        \resumeItem{\normalfont Presented in front of a jury and was graded 100\%.}
-          {}
-      \resumeItemListEnd
-   \resumeSubHeadingListEnd
+\section*{Research Experience}
 
-%-----------Extracurricular Activity-----------------
+\begin{tabular}{L!{\vrule}R}
+    Oct. 2021 - May 2022 & \textbf{Masters project}, University of Manchester. Machine learning in spectra analysis from ALMA observations. Supervised by Prof. Gary Fuller.\\
+    Sep. 2021 - Oct. 2021 & \textbf{Summer research project}, Universitat Autònoma de Barcelona. Simulating the effects of close stellar encounters with N-body simulators. Supervised by Dr. Ignasi Ribas. \\
+    Jun. 2021 - Aug. 2021 & \textbf{UROP Summer Internship}, Imperial College London. Exoplanet atmospheric evolution with machine learning. Supervised by Dr. James Owen.\\
+\end{tabular}
 
-\section{Skills}
-\begin{itemize}[leftmargin=*]
-\item \textbf{Computational skills} \vspace{-5pt}
-\resumeItemListStart
-\resumeItem
-{\normalfont Proficient in Python for data analysis and experienced in machine learning, Python GUIs and CERN's data analysis framework, ROOT.}{}
-\resumeItem
-{\normalfont Confident in LaTeX for scientific writing.}{}
-\resumeItem
-{\normalfont Limited experience in Windows Subsystem for Linux (WSL) and High Performance Computing usage.}{}
-\resumeItemListEnd
-\end{itemize}
+\section*{Publications}
 
-\begin{itemize}[leftmargin=*]
-\item \textbf{Hardware skills} \vspace{-5pt}
-\resumeItemListStart
-\resumeItem
-{\normalfont Experience with general undergraduate laboratory equipment such as: circuit components, oscilloscopes and digital controller systems; lenses, light sources and other optical devices; and various other miscellaneous equipment like hot metals and heating sources.}{}
-\resumeItem
-{\normalfont Experience with some special equipment such as: optical telescopes for lunar observations; remote control of the 42ft telescope at JBCA for pulsar observations; and low radioactive sources for gamma-ray spectroscopy.}{}
-\resumeItemListEnd
-\end{itemize}
+\subsection*{First and Co-Author}
 
-\begin{itemize}[leftmargin=*]
-\item \textbf{Languages} \vspace{-5pt}
-\resumeItemListStart
-\resumeItem
-{\normalfont Native speaker: Spanish and Catalan}{}
-\resumeItem
-{\normalfont Proficient: English}{}
-\resumeItem
-{\normalfont Elementary level: German (A2)}{}
-\resumeItemListEnd
-\end{itemize}
+\begin{tabular}{L!{\vrule}R}
+% Start of first author papers 
+    in prep. &
+    \textbf{Janó Muñoz, C.}, et al.
+    {\textit{Performance and prospects of the SPIRIT infrared CMOS detector for exoplanet detection}}\\
 
-%-------------------------------------------
+    June 2025 &
+    \textbf{Janó Muñoz, C.}, et al.
+    \href{https://ui.adsabs.harvard.edu/abs/2025MNRAS.541..630J/abstract}{\textit{TOI-2407 b: a warm Neptune in the desert}},
+    Monthly Notices of the Royal Astronomical Society, 541, 630-641 \\
 
-%--------PUBLICATIONS------------
-\section{Publications}
-\begin{itemize}[leftmargin=*]
-\item \textbf{Submitted for peer-review} \vspace{-5pt}
-\resumeItemListStart
-\resumeItem
-{\normalfont \textit{Exoplanet atmosphere evolution: emulation with random forests}, submitted to MNRAS. Accessible from arXiv: https://arxiv.org/abs/2110.15162}{}
-\resumeItemListEnd
-\end{itemize}
+    March 2023 &
+    Rogers, J. G., \textbf{Janó Muñoz, C.}, Owen, J. E., Makinen, T. L.
+    \href{https://ui.adsabs.harvard.edu/abs/2023MNRAS.519.6028R/abstract}{\textit{Exoplanet atmosphere evolution: emulation with neural networks}},
+    Monthly Notices of the Royal Astronomical Society, 519, 6028-6043 \\
 
-\section{Extracurricular Activities}
-\resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Manchester Astronomy Society}{Manchester, UK}
-      {Chair}{May 2021 - Present}
-      \resumeItemListStart
-        \resumeItem
-          {\normalfont Supervised a student committee and took responsibility in organisation and safety procedures.}{}
-        \resumeItem
-          {\normalfont Managed social media and event scheduling.}{}
-        \resumeItem
-          {\normalfont Participated in the creation of the Science Union, an outreach and social organisation aimed at natural sciences students.}{}
-      \resumeItemListEnd
-    \resumeSubheadingtwo
-      {Science Officer}{Feb. 2020 - May 2021}
-      \resumeItemListStart
-        \resumeItem
-          {\normalfont Organised and hosted the Stellar Lecture Series for undergraduate students:  biweekly lectures delivered by researchers about current topics in astrophysics and cosmology.}{}
-        \resumeItem
-          {\normalfont Gained experience hosting professionals and organisations, such as the Institute of Physics and Dame Jocelyn Bell-Burnell.}{}
-        \resumeItem
-          {\normalfont Planned and supervised social events such as weekly stargazing nights.}{}
-      \resumeItemListEnd
-    \resumeSubHeadingListEnd
-  
-%--------SKILLS------------
+% End of first author papers
+\end{tabular}
 
+\subsection*{Contributing Author}
+
+\begin{tabular}{L!{\vrule}R}
+% Start of contributing author papers   
+    November 2025 &
+    Scott, M. G., et al.
+    {\textit{Two temperate Earth- and Neptune-sized planets orbiting nearby fully convective M dwarfs}},
+    Monthly Notices of the Royal Astronomical Society, submitted \\
+
+    October 2025 &
+    Barkaoui, K., et al.
+    \href{https://academic.oup.com/mnras/advance-article/doi/10.1093/mnras/staf1807/8294188}{\textit{TOI-7166 b: A Habitable Zone mini-Neptune planet around a nearby low-mass star}},
+    Monthly Notices of the Royal Astronomical Society, accepted \\
+
+    October 2025 &
+    Züñiga-Fernàndez, S., et al.
+    \href{https://ui.adsabs.harvard.edu/abs/2025A%26A...702A..85Z/abstract}{\textit{Two warm Earth-sized exoplanets and an Earth-sized candidate in the M5V-M6V binary system TOI-2267}},
+    Astronomy \& Astrophysics, 702, A85 \\
+
+    August 2024 &
+    Züñiga-Fernàndez, S., et al.
+    \href{https://ui.adsabs.harvard.edu/abs/2024SPIE13094E..13Z/abstract}{\textit{SPECULOOS: five years hunting terrestrial planets around ultra-cool dwarfs}},
+    Proceedings of the SPIE, 13094 \\
+
+    July 2024 &
+    Pedersen, P.P., et al.
+    \href{https://ui.adsabs.harvard.edu/abs/2024SPIE13096E..3XP/abstract}{\textit{Infrared photometry with InGaAs detectors: first light with SPECULOOS}},
+    Proceedings of the SPIE, 13096 \\
+
+    July 2024 &
+    Gillon, M., et al.
+    \href{https://ui.adsabs.harvard.edu/abs/2024NatAs...8..865G/abstract}{\textit{Detection of an Earth-sized exoplanet orbiting the nearby ultracool dwarf star SPECULOOS-3}},
+    Nature Astronomy, 8, 865-878 \\
+
+    October 2023 &
+    Triaud, A. H. M. J., et al.
+    \href{https://ui.adsabs.harvard.edu/abs/2023MNRAS.525L..98T/abstract}{\textit{An M dwarf accompanied by a close-in giant orbiter with SPECULOOS}},
+    Monthly Notices of the Royal Astronomical Society: Letters, 525, L98-L104 \\
+
+% End of contributing author papers
+\end{tabular}
+
+\section*{Talks and posters}
+\begin{tabular}{L!{\vrule}R}
+    January 2026 & \textit{First Results from SPIRIT: A CMOS Detector for Exoplanets around Ultracool Dwarfs}, Rocky Worlds IV, Gröningen, Netherlands (upcoming). \\
+
+    November 2025 & \textit{SPIRIT: A CMOS Detector for Exoplanets Around Ultracool Dwarfs}, Exoplanet Seminar, Observatoire de Paris-PSL, France. \\
+
+    November 2025 & \textit{Discovery of the Neptune-like planet TOI-2407\,b}, Harding Scholars Internal Speaker Event, St Catherine's College, Cambridge, UK. \\
+
+    February 2025 & \textit{Exoplanet Detection with SPIRIT: Infrared CMOS Photometry and the Discovery of the Hot Neptune TOI-2407\,b}, Hills Coffee Talks series, Battcock Centre for Experimental Astrophysics, Cambridge, UK. \\
+
+    February 2025 & \textit{TOI-2407b: A hot Neptune in the Neptune Desert discovered with the SPIRIT Infrared Detector}, Exoplanet Seminar series, University of Cambridge, UK. \\
+
+    June 2024 & POSTER: \textit{Ground-based transits in the infrared with SPIRIT}, Exoplanets V, Leiden, Netherlands. \\
+
+    January 2024 & POSTER: \textit{Finding transiting planets in the infrared with SPIRIT.}, Rocky Worlds III, ETH Zurich, Switzerland. \\
+
+    August 2022 & \textit{Emulating photoevaporation with Machine Learning}, University of California Santa Cruz, USA (remote). \\
+
+\end{tabular}
+
+\section*{Teaching Experience}
+
+\begin{tabular}{L!{\vrule}R}
+
+	Apr. 2024 - May 2024 & \textbf{Part III Example Classes: Exoplanets Course} 2h per week, Cavendish Laboratory. \\
+
+  Nov. 2022 - May 2023 & \textbf{Part IA Physics Supervision} 3h per week, Emmanuel College, University of Cambridge.\\
+
+\end{tabular}
+
+\section*{Observing Experience}
+
+\begin{tabular}{L!{\vrule}R}
+
+	Oct. 2022 - Jan. 2025 & Bi-monthly remote observations with the Callisto and Ganymede telescopes from the SPECULOOS Southern Observatory. \\
+
+  Dec. 2023 & On-site observations, maintenance and testing at the SPECULOOS Southern Observatory, Cerro Paranal, Chile. \\
+
+\end{tabular}
+
+\section*{Awards}
+
+\begin{tabular}{L!{\vrule}R}
+
+    October 2022 & \textbf{Harding Distinguished Postgraduate Scholarship} (£20,000 per year of study), including a £2000 yearly stipend for academic travel. \\
+    December 2018 & \textbf{Physics Success Scholarship} (£2000), for academic excellence in physics and maths.\\
+
+\end{tabular}
+
+\section*{Software}
+
+\begin{tabular}{L!{\vrule}R}
+  \href{https://github.com/claudiajanomunoz/SMART}{\texttt{SMART}} & Co-author: Machine Learning tool for fitting proto-stellar spectra. \\
+\end{tabular}
+
+\section*{Extracurricular Activities and Outreach}
+\begin{tabular}{L!{\vrule}R}
+  Mar. 2025 & \textbf{Open Day}, Volunteer, Institute of Astronomy, Cambridge.\\
+  Mar. 2025 & \textbf{International Women's Day}, Running an exoplanets workshop for high school students. Institute of Astronomy, Cambridge.\\
+  Jan. 2025 - Apr. 2025 & \textbf{International Women's Day Committee}, Member, Institute of Astronomy, Cambridge. \\
+  May 2021 - Feb. 2022 & \textbf{Astronomy Society}, Chair, University of Manchester. \\
+  Feb. 2020 - May 2021 & \textbf{Astronomy Society}, Science Officer, University of Manchester. \\
+
+\end{tabular}
+
+\section*{Skills}
+
+\begin{tabular}{L!{\vrule}R}
+	Programming & \textbf{Proficient}: Python, \textbf{Intermediate}: C++\\
+	Computing & \textbf{Experienced}: LaTeX, Linux, Docker, \textbf{Basic}: HPCs \\
+	Languages & \textbf{Proficient}: English \textbf{Native:} Catalan, Spanish \textbf{Intermediate}: German (B1)
+\end{tabular}
 
 \end{document}
