@@ -1,0 +1,127 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}  
+\usepackage{lmodern}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{natbib}
+\usepackage{amssymb, amsmath}
+\usepackage{xcolor}
+
+\usepackage[colorlinks=True,urlcolor=blue]{hyperref}
+\usepackage{array} % for defining new column types
+\usepackage{fontawesome} % for icons
+\usepackage{comment} % for commenting out sections
+\usepackage{titlesec} % for custom section titles
+
+% Table formatting
+\usepackage{longtable}
+\setlength\LTleft{0pt}      % left-align (longtable centres by default)
+\setlength\LTright{\fill}
+\setlength\LTpre{0pt}       % remove the \bigskip longtable adds above...
+\setlength\LTpost{0pt}      % ...and below
+
+% Define new column types for the tables
+\newcolumntype{L}{>{\raggedleft}p{0.175\textwidth}}
+\newcolumntype{R}{p{0.765\textwidth}}
+
+% Custom section titles
+\titleformat{\section}{\Large\bfseries}{\thesection}{}{}[{\titlerule[0.5pt]}]
+\titleformat{\subsection}{\normalsize\bfseries}{\thesection}{}{}
+\titlespacing*{\subsection}{0pt}{1.2ex}{0.6ex}
+
+% Author-position tag for co-authored papers
+\newcommand{\me}{\textbf{Janó Muñoz, C.}}
+\newcommand{\pos}[2]{\,(\me; #1 of #2 authors)}
+
+\begin{document}
+
+\begin{center}
+\huge
+\textbf{Clàudia Janó Muñoz} \\
+\large
+Publication list\\
+\end{center}
+
+\noindent 10 refereed or accepted journal papers (1 first-author, 1 second-author), 1 first-author paper under review, 2 conference proceedings. % CHECK: recount at submission
+
+\section*{First and second author}
+\begin{tabular}{L!{\vrule}R}
+    under review &
+    \me, et al.
+    {\textit{Performance and prospects of the SPIRIT infrared CMOS detector for exoplanet detection}}, RASTI \\ 
+
+    June 2025 &
+    \me, et al.
+    \href{https://ui.adsabs.harvard.edu/abs/2025MNRAS.541..630J/abstract}{\textit{TOI-2407 b: a warm Neptune in the desert}},
+    Monthly Notices of the Royal Astronomical Society, 541, 630--641 \\
+
+    March 2023 &
+    Rogers, J. G., \me, Owen, J. E., Makinen, T. L.
+    \href{https://ui.adsabs.harvard.edu/abs/2023MNRAS.519.6028R/abstract}{\textit{Exoplanet atmosphere evolution: emulation with neural networks}},
+    Monthly Notices of the Royal Astronomical Society, 519, 6028--6043 \\
+\end{tabular}
+
+\section*{Contributing author}
+% CHECK: optionally add your contribution after each entry, e.g. "SPIRIT observations and photometry".
+\begin{longtable}{L!{\vrule}R}
+    September 2026 &
+    Scott, M. G., et al.
+    \href{https://ui.adsabs.harvard.edu/abs/2026arXiv260937597S/abstract}{\textit{TOI-6981 b: a transiting sub-Neptune at the water ice line}},
+    accepted to Monthly Notices of the Royal Astronomical Society, arXiv:2609.37597 \\
+
+    September 2026 &
+    Lang, F. Z., et al.
+    \href{https://ui.adsabs.harvard.edu/abs/2026MNRAS.tmp.1622L/abstract}{\textit{TOI-4616 b: an Earth-sized planet transiting a nearby M4 dwarf}},
+    Monthly Notices of the Royal Astronomical Society \\
+
+    July 2026 &
+    Pedersen, P. P., et al.
+    \href{https://ui.adsabs.harvard.edu/abs/2026arXiv260712898P/abstract}{\textit{Astra: an open-source fully autonomous robotic observatory control software}},
+    arXiv e-prints, arXiv:2607.12898 \\ 
+
+    April 2026 &
+    Dransfield, G., et al.
+    \href{https://ui.adsabs.harvard.edu/abs/2026MNRAS.547ag448D/abstract}{\textit{MANGOS -- II. Five new giant planets orbiting low-mass stars}},
+    Monthly Notices of the Royal Astronomical Society, 547, stag448 \\
+
+    March 2026 &
+    Scott, M. G., et al.
+    \href{https://ui.adsabs.harvard.edu/abs/2026MNRAS.547ag070S/abstract}{\textit{Two temperate Earth- and Neptune-sized planets orbiting fully convective M dwarfs}},
+    Monthly Notices of the Royal Astronomical Society, 547, stag070 \\
+
+    December 2025 &
+    Barkaoui, K., et al.
+    \href{https://ui.adsabs.harvard.edu/abs/2025MNRAS.544.2637B/abstract}{\textit{TOI-7166 b: a habitable zone mini-Neptune planet around a nearby low-mass star}},
+    Monthly Notices of the Royal Astronomical Society, 544, 2637 \\
+
+    October 2025 &
+    Zúñiga-Fernández, S., et al.
+    \href{https://ui.adsabs.harvard.edu/abs/2025A%26A...702A..85Z/abstract}{\textit{Two warm Earth-sized exoplanets and an Earth-sized candidate in the M5V-M6V binary system TOI-2267}},
+    Astronomy \& Astrophysics, 702, A85 \\
+
+    July 2024 &
+    Gillon, M., et al.
+    \href{https://ui.adsabs.harvard.edu/abs/2024NatAs...8..865G/abstract}{\textit{Detection of an Earth-sized exoplanet orbiting the nearby ultracool dwarf star SPECULOOS-3}},
+    Nature Astronomy, 8, 865--878 \\
+
+    October 2023 &
+    Triaud, A. H. M. J., et al.
+    \href{https://ui.adsabs.harvard.edu/abs/2023MNRAS.525L..98T/abstract}{\textit{An M dwarf accompanied by a close-in giant orbiter with SPECULOOS}},
+    Monthly Notices of the Royal Astronomical Society: Letters, 525, L98--L104 \\
+
+    \end{longtable}
+
+\section*{Conference proceedings}
+\begin{tabular}{L!{\vrule}R}
+    August 2024 &
+    Zúñiga-Fernández, S., et al.\ 
+    \href{https://ui.adsabs.harvard.edu/abs/2024SPIE13094E..13Z/abstract}{\textit{SPECULOOS: five years hunting terrestrial planets around ultra-cool dwarfs}},
+    Proceedings of the SPIE, 13094 \\ % CHECK: author position (not on arXiv)
+
+    July 2024 &
+    Pedersen, P. P., et al.
+    \href{https://ui.adsabs.harvard.edu/abs/2024SPIE13096E..3XP/abstract}{\textit{Infrared photometry with InGaAs detectors: first light with SPECULOOS}},
+    Proceedings of the SPIE, 13096 \\
+\end{tabular}
+
+\end{document}
