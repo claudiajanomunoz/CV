@@ -1,5 +1,7 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}   % fixes broken accents in the PDF text layer (Janó Muñoz, Zúñiga-Fernández, Autònoma)
+\usepackage{lmodern}
 \usepackage[margin=1.5cm]{geometry}
 \usepackage{natbib}
 \usepackage{amssymb, amsmath}
@@ -25,15 +27,15 @@
 % Custom section titles
 \titleformat{\section}{\Large\bfseries}{\thesection}{}{}[{\titlerule[0.5pt]}]
 \titleformat{\subsection}{\normalsize\bfseries}{\thesection}{}{}
+\titlespacing*{\subsection}{0pt}{1.2ex}{0.6ex}
+
+% Author-position tag for co-authored papers
+\newcommand{\me}{\textbf{Janó Muñoz, C.}}
+\newcommand{\pos}[2]{\,(\me; #1 of #2 authors)}
 
 \begin{document}
 
 \small % Reduce font size for the whole document
-
-%\begin{flushright}
-%  \footnotesize
-%  \textbf{Version v2.3}
-%\end{flushright}
 
 \begin{center}
 \huge
@@ -60,51 +62,142 @@ PhD student - University of Cambridge \\
 	\end{flushright}
 \end{minipage}
 
-\section*{Education}
+\vspace{0.6ex}
+\noindent\textit{keywords:} Transit photometry; Astronomical detectors; Late-type stars 
+
+\section*{Research interests}
+
+\noindent I use high-precision, ground-based near-infrared photometry to find and characterise planets around the coolest stars, working across the whole chain from detector to demographics. During my PhD I optimised the calibration and reduction pipeline of SPIRIT, an InGaAs CMOS detector at SPECULOOS-South, and characterised its long-term on-sky performance; this work underpins the validation of new planets such as TOI-2407\,b, a warm Neptune in the Neptune desert. I apply the same photometry to stellar and substellar variability, and I lead a collaboration combining MeerKAT radio and SPECULOOS infrared monitoring of brown-dwarf magnetospheres. Building on earlier machine-learning work on photoevaporation and the radius valley, I aim to connect instrument-limited precision to population questions, in particular the Neptune desert.
+
+\section*{Employment and Education}
 \begin{tabular}{L!{\vrule}R}
-	2022 - \textit{est. February 2027} & \textbf{PhD in Physics}, \textit{Optimisation, performance and first discoveries of the SPIRIT infrared detector for exoplanets transiting late-type stars.}, Cavendish Laboratory, University of Cambridge. Supervised by Prof. Didier Queloz and Dr. Matthew Hooton. \\
-	2018 - 2022 & \textbf{MPhys Physics with Astrophysics} First Class, University of Manchester.  \\
+  2026 -- 2027 & \textbf{Postdoctoral Researcher}, ETH Zurich. \\
+	2022 -- 2027 & \textbf{PhD in Physics}, Cavendish Laboratory, University of Cambridge. Thesis: \textit{Optimisation, performance and first discoveries of the SPIRIT infrared detector for exoplanets transiting late-type stars}. Supervised by Prof. Didier Queloz and Dr. Matthew Hooton. Funded by the Harding Distinguished Postgraduate Scholarship. Submission: February 2027. \\
+	2018 -- 2022 & \textbf{MPhys Physics with Astrophysics}, First Class, University of Manchester.  \\
 \end{tabular}
 
-\section*{Research Experience}
-
+\section*{Research experience}
 \begin{tabular}{L!{\vrule}R}
-    Oct. 2021 - May 2022 & \textbf{Masters project}, University of Manchester. Machine learning in spectra analysis from ALMA observations. Supervised by Prof. Gary Fuller.\\
-    Sep. 2021 - Oct. 2021 & \textbf{Summer research project}, Universitat Autònoma de Barcelona. Simulating the effects of close stellar encounters with N-body simulators. Supervised by Dr. Ignasi Ribas. \\
-    Jun. 2021 - Aug. 2021 & \textbf{UROP Summer Internship}, Imperial College London. Exoplanet atmospheric evolution with machine learning. Supervised by Dr. James Owen.\\
+    Oct. 2022 -- present & \textbf{PhD research}, Cavendish Laboratory, University of Cambridge (SPECULOOS consortium). \newline
+    \hspace*{0.6em}$\bullet$ Optimised the calibration pipeline and characterised the on-sky performance of SPIRIT, a novel InGaAs CMOS near-infrared detector on the Callisto telescope (SPECULOOS-South). Modelling and correcting for dark current and glow, row-pattern effects, bad pixels, noise, and operating temperature trade-off. \newline
+    \hspace*{0.6em}$\bullet$ Analysed the first year of SPIRIT operations of ultracool dwarfs and TESS candidates (first-author, RASTI, under review). \newline
+    \hspace*{0.6em}$\bullet$ Validated the Neptune desert planet TOI-2407\,b with multi-band ground-based follow-up including SPIRIT (first-author, MNRAS 2025). \newline
+    \hspace*{0.6em}$\bullet$ Co-developing \texttt{goibniu}, a machine learning-based observation tool to optimise the scheduling of observations with SPIRIT by mitigating the effect of bad pixels and maximise the number of comparison stars (Hooton \& Janó Muñoz, in prep()). \\
+    Oct. 2021 -- May 2022 & \textbf{Master's project}, University of Manchester. Machine learning in spectral analysis of ALMA observations. Supervised by Prof. Gary Fuller.\\
+    Sep. 2021 -- Oct. 2021 & \textbf{Summer research project}, Universitat Autònoma de Barcelona. Simulating the effects of close stellar encounters with N-body simulators. Supervised by Dr. Ignasi Ribas. \\
+    Jun. 2021 -- Aug. 2021 & \textbf{UROP Summer Internship}, Imperial College London. Exoplanet atmospheric evolution with machine learning (led to Rogers, Janó Muñoz et al. 2023, MNRAS). Supervised by Dr. James Owen.\\
+\end{tabular}
+
+\section*{Grants and awards}
+\begin{tabular}{L!{\vrule}R}
+    October 2022 & \textbf{Harding Distinguished Postgraduate Scholarship} (£20,000 per year of study), including a £2,000 yearly stipend for academic travel. \\
+    December 2018 & \textbf{Physics Success Scholarship} (£2,000), for academic excellence in physics and mathematics.\\
+\end{tabular}
+
+\section*{Observing and proposals}
+\begin{tabular}{L!{\vrule}R}
+  July 2026 & \textbf{Co-I}, \textit{Unlocking Ultracool Dwarf Magnetospheres via Simultaneous Radio/IR Monitoring}, MeerKAT radio telescope, jointly with CfA doctoral student Kevin Ortiz-Ceballos (outcome pending). \\ 
+  Oct. 2022 -- Jan. 2025 & Regular remote observing with the Callisto and Ganymede telescopes, SPECULOOS Southern Observatory. \\ % CHECK: replace with a number of nights (original said "bi-monthly", which is ambiguous)
+  Dec. 2023 & On-site observations, instrument maintenance and testing at the SPECULOOS Southern Observatory, Cerro Paranal, Chile. \\
+\end{tabular}
+
+\section*{Services}
+\subsection*{Committees and organisation}
+\begin{tabular}{L!{\vrule}R}
+  Jan. 2025 -- Apr. 2025 & \textbf{International Women's Day Committee}, Member, Institute of Astronomy, University of Cambridge. \\
+  Sep. 2023 -- Sep. 2025 & \textbf{Queloz Group}, Organiser and host of the group's meetings, events, and journal club, Cavendish Laboratory, University of Cambridge. \\
+\end{tabular}
+
+\subsection*{Outreach}
+\begin{tabular}{L!{\vrule}R}
+  Mar. 2025 & \textbf{International Women's Day}, Ran an exoplanets workshop for high-school students, Institute of Astronomy, Cambridge.\\
+  Mar. 2025 & \textbf{Open Day}, Volunteer, Institute of Astronomy, Cambridge.\\
+\end{tabular}
+
+\section*{Teaching responsibilities}
+\begin{tabular}{L!{\vrule}R}
+	Jun. 2026 -- Sep. 2026 & \textbf{Teaching Assistant}, Cambridge Centre for International Research, UK. \\
+	Apr. 2024 -- May 2024 & \textbf{Part III Example Classes: Exoplanets Course}, Cavendish Laboratory, University of Cambridge. \\
+  Nov. 2022 -- May 2023 & \textbf{Part IA Physics Supervisions}, Emmanuel College, University of Cambridge.\\
+\end{tabular}
+
+\section*{Talks}
+\subsection*{Seminars} 
+\begin{tabular}{L!{\vrule}R}
+    March 2026 & \textit{SPIRIT: A CMOS Detector for Exoplanets Around Ultracool Dwarfs}, Center for Astrophysics $|$ Harvard \& Smithsonian, Cambridge, MA, USA. \\
+    November 2025 & \textit{SPIRIT: A CMOS Detector for Exoplanets Around Ultracool Dwarfs}, Exoplanet Seminar, Observatoire de Paris-PSL, France. \\
+    August 2022 & \textit{Emulating photoevaporation with Machine Learning}, University of California Santa Cruz, USA (remote). \\
+\end{tabular}
+
+\subsection*{Conference talks}
+\begin{tabular}{L!{\vrule}R}
+    February 2026 & \textit{Search for habitable exoplanets with the SPIRIT infrared detector}, Harding Scholar Conference, Cambridge, UK. \\
+    January 2026 & \textit{First Results from SPIRIT: A CMOS Detector for Exoplanets around Ultracool Dwarfs}, Rocky Worlds IV, Groningen, Netherlands. \\
+\end{tabular}
+
+\subsection*{Posters}
+\begin{tabular}{L!{\vrule}R}
+    June 2026 & \textit{Ground-based transits in the infrared with SPIRIT}, Exoplanets VI, Porto, Portugal. \\
+    June 2024 & \textit{Ground-based transits in the infrared with SPIRIT}, Exoplanets V, Leiden, Netherlands. \\
+    January 2024 & \textit{Finding transiting planets in the infrared with SPIRIT}, Rocky Worlds III, ETH Zurich, Switzerland. \\
+\end{tabular}
+
+\subsection*{Departmental and consortium talks}
+\begin{tabular}{L!{\vrule}R}
+    June 2026 & \textit{Brown dwarf radio synergies}, SPECULOOS consortium meeting, University of Liege, Belgium. \\
+    December 2025 & \textit{Discussion on SPIRIT: Infrared CMOS Photometry for Exoplanets around Ultracool Dwarfs}, LCLU discussion series, Cambridge, UK. \\
+    November 2025 & \textit{Discovery of the Neptune-like planet TOI-2407\,b}, Harding Scholars Internal Speaker Event, St Catharine's College, Cambridge, UK. \\
+    February 2025 & \textit{Exoplanet Detection with SPIRIT: Infrared CMOS Photometry and the Discovery of the Hot Neptune TOI-2407\,b}, Hills Coffee Talks, Battcock Centre for Experimental Astrophysics, Cambridge, UK. \\
+    February 2025 & \textit{TOI-2407\,b: A hot Neptune in the Neptune Desert discovered with the SPIRIT Infrared Detector}, Exoplanet Seminar series, University of Cambridge, UK. \\
+\end{tabular}
+
+\section*{Software development}
+\begin{tabular}{L!{\vrule}R}
+  \texttt{SPECULOOS pipeline} & Co-developer: Data reduction pipeline for the SPECULOOS consortium, including optimised SPIRIT data reduction and analysis. \\
+  \href{https://github.com/mhooton/goibniu}{\texttt{goibniu}} & Co-developer: machine-learning-based observation tool for SPECULOOS, under development (Hooton \& Janó Muñoz, in prep.). \\ % CHECK: add link if public
+  \href{https://github.com/claudiajanomunoz/SMART}{\texttt{SMART}} & Co-author: machine-learning tool for fitting protostellar spectra. \\
+\end{tabular}
+
+\section*{Extracurricular activities}
+\begin{tabular}{L!{\vrule}R}
+  May 2021 -- Feb. 2022 & \textbf{Astronomy Society}, Chair, University of Manchester. \\
+  Feb. 2020 -- May 2021 & \textbf{Astronomy Society}, Science Officer, University of Manchester. \\
+\end{tabular}
+
+\section*{Skills}
+\begin{tabular}{L!{\vrule}R}
+	Programming & \textbf{Proficient}: Python; \textbf{Intermediate}: C++\\
+	Computing & \textbf{Experienced}: LaTeX, Linux, Docker; \textbf{Basic}: HPC \\
+	Languages & \textbf{Native}: Catalan, Spanish; \textbf{Proficient}: English; \textbf{Intermediate}: German (B1)
 \end{tabular}
 
 \section*{Publications}
+\noindent 10 refereed or accepted journal papers (1 first-author, 1 second-author), 1 first-author paper under review, 2 conference proceedings. % CHECK: recount at submission
 
-\subsection*{First and Co-Author}
-
+\subsection*{First and second author}
 \begin{tabular}{L!{\vrule}R}
-% Start of first author papers 
     under review &
-    \textbf{Janó Muñoz, C.}, et al.
-    {\textit{Performance and prospects of the SPIRIT infrared CMOS detector for exoplanet detection}}\\
+    \me, et al.
+    {\textit{Performance and prospects of the SPIRIT infrared CMOS detector for exoplanet detection}}, RASTI \\ 
 
     June 2025 &
-    \textbf{Janó Muñoz, C.}, et al.
+    \me, et al.
     \href{https://ui.adsabs.harvard.edu/abs/2025MNRAS.541..630J/abstract}{\textit{TOI-2407 b: a warm Neptune in the desert}},
-    Monthly Notices of the Royal Astronomical Society, 541, 630-641 \\
+    Monthly Notices of the Royal Astronomical Society, 541, 630--641 \\
 
     March 2023 &
-    Rogers, J. G., \textbf{Janó Muñoz, C.}, Owen, J. E., Makinen, T. L.
+    Rogers, J. G., \me, Owen, J. E., Makinen, T. L.
     \href{https://ui.adsabs.harvard.edu/abs/2023MNRAS.519.6028R/abstract}{\textit{Exoplanet atmosphere evolution: emulation with neural networks}},
-    Monthly Notices of the Royal Astronomical Society, 519, 6028-6043 \\
-
-% End of first author papers
+    Monthly Notices of the Royal Astronomical Society, 519, 6028--6043 \\
 \end{tabular}
 
-\subsection*{Contributing Author}
-
+\subsection*{Contributing author}
+% CHECK: optionally add your contribution after each entry, e.g. "SPIRIT observations and photometry".
 \begin{longtable}{L!{\vrule}R}
-% Start of contributing author papers   
     September 2026 &
     Scott, M. G., et al.
     \href{https://ui.adsabs.harvard.edu/abs/2026arXiv260937597S/abstract}{\textit{TOI-6981 b: a transiting sub-Neptune at the water ice line}},
-    arXiv:2609.37597, accepted to Monthly Notices of the Royal Astronomical Society \\
+    accepted to Monthly Notices of the Royal Astronomical Society, arXiv:2609.37597 \\
 
     September 2026 &
     Lang, F. Z., et al.
@@ -114,7 +207,7 @@ PhD student - University of Cambridge \\
     July 2026 &
     Pedersen, P. P., et al.
     \href{https://ui.adsabs.harvard.edu/abs/2026arXiv260712898P/abstract}{\textit{Astra: an open-source fully autonomous robotic observatory control software}},
-    arXiv e-prints, arXiv:2607.12898 \\
+    arXiv e-prints, arXiv:2607.12898 \\ 
 
     April 2026 &
     Dransfield, G., et al.
@@ -136,111 +229,29 @@ PhD student - University of Cambridge \\
     \href{https://ui.adsabs.harvard.edu/abs/2025A%26A...702A..85Z/abstract}{\textit{Two warm Earth-sized exoplanets and an Earth-sized candidate in the M5V-M6V binary system TOI-2267}},
     Astronomy \& Astrophysics, 702, A85 \\
 
-    August 2024 &
-    Zúñiga-Fernández, S., et al.
-    \href{https://ui.adsabs.harvard.edu/abs/2024SPIE13094E..13Z/abstract}{\textit{SPECULOOS: five years hunting terrestrial planets around ultra-cool dwarfs}},
-    Proceedings of the SPIE, 13094 \\
-
-    July 2024 &
-    Pedersen, P.P., et al.
-    \href{https://ui.adsabs.harvard.edu/abs/2024SPIE13096E..3XP/abstract}{\textit{Infrared photometry with InGaAs detectors: first light with SPECULOOS}},
-    Proceedings of the SPIE, 13096 \\
-
     July 2024 &
     Gillon, M., et al.
     \href{https://ui.adsabs.harvard.edu/abs/2024NatAs...8..865G/abstract}{\textit{Detection of an Earth-sized exoplanet orbiting the nearby ultracool dwarf star SPECULOOS-3}},
-    Nature Astronomy, 8, 865-878 \\
+    Nature Astronomy, 8, 865--878 \\
 
     October 2023 &
     Triaud, A. H. M. J., et al.
     \href{https://ui.adsabs.harvard.edu/abs/2023MNRAS.525L..98T/abstract}{\textit{An M dwarf accompanied by a close-in giant orbiter with SPECULOOS}},
-    Monthly Notices of the Royal Astronomical Society: Letters, 525, L98-L104 \\
+    Monthly Notices of the Royal Astronomical Society: Letters, 525, L98--L104 \\
 
-% End of contributing author papers
-\end{longtable}
+    \end{longtable}
 
-\section*{Talks and posters}
+\subsection*{Conference proceedings}
 \begin{tabular}{L!{\vrule}R}
+    August 2024 &
+    Zúñiga-Fernández, S., et al.\ 
+    \href{https://ui.adsabs.harvard.edu/abs/2024SPIE13094E..13Z/abstract}{\textit{SPECULOOS: five years hunting terrestrial planets around ultra-cool dwarfs}},
+    Proceedings of the SPIE, 13094 \\ % CHECK: author position (not on arXiv)
 
-    June 2026 & POSTER: \textit{Ground-based transits in the infrared with SPIRIT}, Exoplanets VI, Porto, Portugal. \\
-
-    March 2026 & \textit{SPIRIT: A CMOS Detector for Exoplanets Around Ultracool Dwarfs}, Harvard-Smithsonian Center for Astrophysics, Cambridge, MA, USA. \\
-
-    February 2026 & \textit{Search for habitable exoplanets with the SPIRIT infrared detector}, Harding Scholar Conference, Cambridge, UK. \\
-
-    January 2026 & \textit{First Results from SPIRIT: A CMOS Detector for Exoplanets around Ultracool Dwarfs}, Rocky Worlds IV, Gröningen, Netherlands. \\
-
-    December 2025 & \textit{Discussion on SPIRIT: Infrared CMOS Photometry for Exoplanets around Ultracool Dwarfs}, LCLU discussion series, Cambridge, UK. \\
-
-    November 2025 & \textit{SPIRIT: A CMOS Detector for Exoplanets Around Ultracool Dwarfs}, Exoplanet Seminar, Observatoire de Paris-PSL, France. \\
-
-    November 2025 & \textit{Discovery of the Neptune-like planet TOI-2407\,b}, Harding Scholars Internal Speaker Event, St Catherine's College, Cambridge, UK. \\
-
-    February 2025 & \textit{Exoplanet Detection with SPIRIT: Infrared CMOS Photometry and the Discovery of the Hot Neptune TOI-2407\,b}, Hills Coffee Talks series, Battcock Centre for Experimental Astrophysics, Cambridge, UK. \\
-
-    February 2025 & \textit{TOI-2407b: A hot Neptune in the Neptune Desert discovered with the SPIRIT Infrared Detector}, Exoplanet Seminar series, University of Cambridge, UK. \\
-
-    June 2024 & POSTER: \textit{Ground-based transits in the infrared with SPIRIT}, Exoplanets V, Leiden, Netherlands. \\
-
-    January 2024 & POSTER: \textit{Finding transiting planets in the infrared with SPIRIT.}, Rocky Worlds III, ETH Zurich, Switzerland. \\
-
-    August 2022 & \textit{Emulating photoevaporation with Machine Learning}, University of California Santa Cruz, USA (remote). \\
-
-\end{tabular}
-
-\section*{Teaching Experience}
-
-\begin{tabular}{L!{\vrule}R}
-	June 2026 - Sep. 2026 & \textbf{Teaching Assistant} Cambridge Centre for International Research, UK. \\
-
-	Apr. 2024 - May 2024 & \textbf{Part III Example Classes: Exoplanets Course} Cavendish Laboratory, University of Cambridge. \\
-
-  Nov. 2022 - May 2023 & \textbf{Part IA Physics Supervision} Emmanuel College, University of Cambridge.\\
-
-\end{tabular}
-
-\section*{Observing and Proposals}
-
-\begin{tabular}{L!{\vrule}R}
-  July 2026 & Co-PI on the \textit{Unlocking Ultracool Dwarf Magnetospheres via Simultaneous Radio/IR Monitoring} proposal for the MeerKAT radio telescope. \\
-
-	Oct. 2022 - Jan. 2025 & Bi-monthly remote observations with the Callisto and Ganymede telescopes from the SPECULOOS Southern Observatory. \\
-
-  Dec. 2023 & On-site observations, maintenance and testing at the SPECULOOS Southern Observatory, Cerro Paranal, Chile. \\
-
-\end{tabular}
-
-\section*{Awards}
-
-\begin{tabular}{L!{\vrule}R}
-
-    October 2022 & \textbf{Harding Distinguished Postgraduate Scholarship} (£20,000 per year of study), including a £2000 yearly stipend for academic travel. \\
-    December 2018 & \textbf{Physics Success Scholarship} (£2000), for academic excellence in physics and maths.\\
-
-\end{tabular}
-
-\section*{Software}
-
-\begin{tabular}{L!{\vrule}R}
-  \href{https://github.com/claudiajanomunoz/SMART}{\texttt{SMART}} & Co-author: Machine Learning tool for fitting proto-stellar spectra. \\
-\end{tabular}
-
-\section*{Extracurricular Activities and Outreach}
-\begin{tabular}{L!{\vrule}R}
-  Mar. 2025 & \textbf{Open Day}, Volunteer, Institute of Astronomy, Cambridge.\\
-  Mar. 2025 & \textbf{International Women's Day}, Running an exoplanets workshop for high school students. Institute of Astronomy, Cambridge.\\
-  Jan. 2025 - Apr. 2025 & \textbf{International Women's Day Committee}, Member, Institute of Astronomy, Cambridge. \\
-  May 2021 - Feb. 2022 & \textbf{Astronomy Society}, Chair, University of Manchester. \\
-  Feb. 2020 - May 2021 & \textbf{Astronomy Society}, Science Officer, University of Manchester. \\
-
-\end{tabular}
-
-\section*{Skills}
-
-\begin{tabular}{L!{\vrule}R}
-	Programming & \textbf{Proficient}: Python, \textbf{Intermediate}: C++\\
-	Computing & \textbf{Experienced}: LaTeX, Linux, Docker, \textbf{Basic}: HPCs \\
-	Languages & \textbf{Proficient}: English \textbf{Native:} Catalan, Spanish \textbf{Intermediate}: German (B1)
+    July 2024 &
+    Pedersen, P. P., et al.
+    \href{https://ui.adsabs.harvard.edu/abs/2024SPIE13096E..3XP/abstract}{\textit{Infrared photometry with InGaAs detectors: first light with SPECULOOS}},
+    Proceedings of the SPIE, 13096 \\
 \end{tabular}
 
 \end{document}
