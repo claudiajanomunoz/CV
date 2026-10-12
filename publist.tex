@@ -32,6 +32,8 @@
 % Author-position tag for co-authored papers
 \newcommand{\me}{\textbf{Janó Muñoz, C.}}
 \newcommand{\pos}[2]{\,(\me; #1 of #2 authors)}
+% Full author lists in a smaller font: change \footnotesize to \scriptsize to shrink further
+\newcommand{\authlist}[1]{{\footnotesize #1}}
 
 \begin{document}
 
@@ -42,86 +44,84 @@
 Publication list\\
 \end{center}
 
-\noindent 10 refereed or accepted journal papers (1 first-author, 1 second-author), 1 first-author paper under review, 2 conference proceedings. % CHECK: recount at submission
+\noindent 10 refereed or accepted journal papers (1 first-author, 1 second-author), 1 first-author paper under review, 3 conference proceedings. % CHECK: recount at submission
 
 \section*{First and second author}
 \begin{tabular}{L!{\vrule}R}
     under review &
-    \me, et al.
-    {\textit{Performance and prospects of the SPIRIT infrared CMOS detector for exoplanet detection}}, RASTI \\ 
+    \textit{Performance and prospects of the SPIRIT infrared CMOS detector for exoplanet detection}, RASTI \newline
+    \authlist{\me, et al.} \\ % CHECK: paste the full SPIRIT author list here (not public yet)
 
     June 2025 &
-    \me, et al.
     \href{https://ui.adsabs.harvard.edu/abs/2025MNRAS.541..630J/abstract}{\textit{TOI-2407 b: a warm Neptune in the desert}},
-    Monthly Notices of the Royal Astronomical Society, 541, 630--641 \\
+    Monthly Notices of the Royal Astronomical Society, 541, 630--641 \newline
+    \authlist{\me, Hooton, M. J., Pedersen, P. P., Barkaoui, K., Rackham, B. V., Burgasser, A. J., Pozuelos, F. J., Stassun, K. G., Queloz, D., Triaud, A. H. M. J., Ziegler, C., Almenara, J. M., Timmermans, M., Bonfils, X., Collins, K. A., Demory, B. O., Dransfield, G., Ghachoui, M., Gillon, M., Jehin, E., Mann, A. W., Sebastian, D., Thompson, S., Twicken, J. D., de Wit, J., Zúñiga-Fernández, S.} \\
 
     March 2023 &
-    Rogers, J. G., \me, Owen, J. E., Makinen, T. L.
     \href{https://ui.adsabs.harvard.edu/abs/2023MNRAS.519.6028R/abstract}{\textit{Exoplanet atmosphere evolution: emulation with neural networks}},
-    Monthly Notices of the Royal Astronomical Society, 519, 6028--6043 \\
+    Monthly Notices of the Royal Astronomical Society, 519, 6028--6043 \newline
+    \authlist{Rogers, J. G., \me, Owen, J. E., Makinen, T. L.} \\
 \end{tabular}
 
 \section*{Contributing author}
-% CHECK: optionally add your contribution after each entry, e.g. "SPIRIT observations and photometry".
 \begin{longtable}{L!{\vrule}R}
     September 2026 &
-    Scott, M. G., et al.
     \href{https://ui.adsabs.harvard.edu/abs/2026arXiv260937597S/abstract}{\textit{TOI-6981 b: a transiting sub-Neptune at the water ice line}},
-    accepted to Monthly Notices of the Royal Astronomical Society, arXiv:2609.37597 \\
+    accepted to Monthly Notices of the Royal Astronomical Society, arXiv:2609.37597 \newline
+    \authlist{Scott, M. G., Triaud, A. H. M. J., Pass, E. K., Adamson, A., Collins, K. A., Barkaoui, K., Bieryla, A., Burgasser, A. J., Everett, M. E., Howell, S. B., Latham, D. W., Rackham, B. V., Safonov, B. S., Serra-Ricart, M., Soubkiou, A., Dransfield, G., Hesse, K., Fernandez de Diego, P., Softich, E., Srdoc, G., Timmermans, M., Audenaert, J., Alonso, R., Burdanov, A. Y., Davis, Y. T., Davoudi, F., de Wit, J., Dholakia, S., Ducrot, E., Gillon, M., Gomez Maqueo Chew, Y., Hooton, M. J., \me, Jehin, E., Khandelwal, A., Marriott, T. R., Pedersen, P. P., Pichardo Marcano, M., Pozuelos, F. J., Rebolo-López, R., Stalport, M., Venner, A., Yalçinkaya, S., Lang, F. Z., Zúñiga-Fernández, S.} \\ % authors from arXiv v1; update once published
 
     September 2026 &
-    Lang, F. Z., et al.
     \href{https://ui.adsabs.harvard.edu/abs/2026MNRAS.tmp.1622L/abstract}{\textit{TOI-4616 b: an Earth-sized planet transiting a nearby M4 dwarf}},
-    Monthly Notices of the Royal Astronomical Society \\
-
-    July 2026 &
-    Pedersen, P. P., et al.
-    \href{https://ui.adsabs.harvard.edu/abs/2026arXiv260712898P/abstract}{\textit{Astra: an open-source fully autonomous robotic observatory control software}},
-    arXiv e-prints, arXiv:2607.12898 \\ 
+    Monthly Notices of the Royal Astronomical Society \newline
+    \authlist{Lang, F. Z., Demory, B. O., Gómez Maqueo Chew, Y., Schmid, Y., Timmermans, M., Pozuelos, F. J., Gillon, M., Burdanov, A. Y., Rackham, B. V., Queloz, D., Stassun, K. G., Barkaoui, K., Triaud, A., de Wit, J., Zúñiga-Fernández, S., Burgasser, A. J., Ducrot, E., Scott, M. G., Sebastian, D., Soubkiou, A., Lendl, M., Plauchu-Frayn, I., Schroffenegger, U., Meier Valdés, E., Pedersen, P. P., Khandelwal, A., Gerasimov, R., Aganze, C., Hsu, C.-C., Jenkins, J. M., Everett, M. E., Watkins, C., Theissen, C. A., Collins, K. A., Osborn, H. P., Shporer, A., \me, Suganuma, T., Narita, N., Fukui, A., Murgas, F., de Leon, J., Pallé, E., Davis, Y., Kitzmann, D., Iyer, A. R., Pichardo Marcano, M., Hooton, M. J.} \\ % CHECK: rebuilt from a damaged Crossref record (48 authors incl. M. E. Everett; arXiv v1 has 47) - verify on the journal page
 
     April 2026 &
-    Dransfield, G., et al.
     \href{https://ui.adsabs.harvard.edu/abs/2026MNRAS.547ag448D/abstract}{\textit{MANGOS -- II. Five new giant planets orbiting low-mass stars}},
-    Monthly Notices of the Royal Astronomical Society, 547, stag448 \\
+    Monthly Notices of the Royal Astronomical Society, 547, stag448 \newline
+    \authlist{Dransfield, G., Timmermans, M., Sebastian, D., Rackham, B. V., Burgasser, A., Barkaoui, K., Triaud, A. H. M. J., Gillon, M., Almenara, J. M., Casewell, S. L., Collins, K. A., Fukui, A., \me, Kanodia, S., Narita, N., Palle, E., Scott, M. G., Soubkiou, A., Stokholm, A., Audenaert, J., Bakos, G. Á., Beletsky, Y., de Beurs, Z. L., Benkhaldoun, Z., Burdanov, A., Butler, R. P., Caldwell, D., Crane, J. D., Davis, Y. T., Demory, B. O., Ducrot, E., Gómez Maqueo Chew, Y., Gachaoui, M., Hartman, J. D., Hooton, M. J., Jehin, E., Mercier, S., Murgas, F., Murray, C., Pedersen, P. P., Pozuelos, F. J., Rice, M., Ross, G., Shectman, S. A., Softich, E., Tala Pinto, M., Vanderburg, A. M., Villasenor, J., de Wit, J., Zúñiga-Fernández, S.} \\
 
     March 2026 &
-    Scott, M. G., et al.
     \href{https://ui.adsabs.harvard.edu/abs/2026MNRAS.547ag070S/abstract}{\textit{Two temperate Earth- and Neptune-sized planets orbiting fully convective M dwarfs}},
-    Monthly Notices of the Royal Astronomical Society, 547, stag070 \\
+    Monthly Notices of the Royal Astronomical Society, 547, stag070 \newline
+    \authlist{Scott, M. G., Dransfield, G., Timmermans, M., Triaud, A. H. M. J., Rackham, B. V., Barkaoui, K., Burgasser, A. J., Collins, K. A., Gillon, M., Howell, S. B., Levine, A. M., Pozuelos, F. J., Stassun, K. G., Ziegler, C., Gomez Maqueo Chew, Y., Clark, C. A., Davis, Y., Davoudi, F., Daylan, T., Demory, B.-O., Feliz, D., Fukui, A., Günther, M. N., Jehin, E., Lienhard, F., Mann, A. W., \me, Narita, N., Pedersen, P. P., Schwarz, R. P., Shporer, A., Soubkiou, A., Zúñiga-Fernández, S.} \\
 
     December 2025 &
-    Barkaoui, K., et al.
     \href{https://ui.adsabs.harvard.edu/abs/2025MNRAS.544.2637B/abstract}{\textit{TOI-7166 b: a habitable zone mini-Neptune planet around a nearby low-mass star}},
-    Monthly Notices of the Royal Astronomical Society, 544, 2637 \\
+    Monthly Notices of the Royal Astronomical Society, 544, 2637 \newline
+    \authlist{Barkaoui, K., Pozuelos, F. J., Rackham, B. V., Burgasser, A. J., Triaud, A. H. M. J., Serra-Ricart, M., Timmermans, M., Yalçınkaya, S., Soubkiou, A., Stassun, K. G., Collins, K. A., Amado, P. J., Baştürk, Ö., Burdanov, A., Davis, Y. T., de Wit, J., Demory, B.-O., Deveny, S., Dransfield, G., Ducrot, E., Gillon, M., Gómez Maqueo Chew, Y., Hooton, M. J., Horne, K., Howell, S. B., \me, Jehin, E., Jenkins, J. M., Littlefield, C., Martín, E. L., Niraula, P., Pedersen, P. P., Queloz, D., Scott, M. G., Sefako, R., Shporer, A., Stockdale, C., Softich, E., Sota, A., Tofflemire, B., Şimşir, Ö., Varas, R., Lang, F. Z., Zúñiga-Fernández, S. S.} \\
 
     October 2025 &
-    Zúñiga-Fernández, S., et al.
     \href{https://ui.adsabs.harvard.edu/abs/2025A%26A...702A..85Z/abstract}{\textit{Two warm Earth-sized exoplanets and an Earth-sized candidate in the M5V-M6V binary system TOI-2267}},
-    Astronomy \& Astrophysics, 702, A85 \\
+    Astronomy \& Astrophysics, 702, A85 \newline
+    \authlist{Zúñiga-Fernández, S., Pozuelos, F. J., Dévora-Pajares, M., Cuello, N., Greklek-McKeon, M., Stassun, K. G., Van Grootel, V., Rojas-Ayala, B., Korth, J., Günther, M. N., Burgasser, A. J., Hsu, C., Rackham, B. V., Barkaoui, K., Timmermans, M., Cadieux, C., Alonso, R., Strakhov, I. A., Howell, S. B., Littlefield, C., Furlan, E., Amado, P. J., Jenkins, J. M., Twicken, J. D., Sucerquia, M., Davis, Y. T., Schanche, N., Collins, K. A., Burdanov, A., Davoudi, F., Demory, B.-O., Delrez, L., Dransfield, G., Ducrot, E., Garcia, L. J., Gillon, M., Gómez Maqueo Chew, Y., \me, Jehin, E., Murray, C. A., Niraula, P., Pedersen, P. P., Queloz, D., Rebolo-López, R., Scott, M. G., Sebastian, D., Hooton, M. J., Thompson, S. J., Triaud, A. H. M. J., de Wit, J., Ghachoui, M., Benkhaldoun, Z., Doyon, R., Lafrenière, D., Casanova, V., Sota, A., Plauchu-Frayn, I., Khandelwal, A., Zong Lang, F., Schroffenegger, U., Wampfler, S., Lendl, M., Schwarz, R. P., Murgas, F., Palle, E., Parviainen, H.} \\
 
     July 2024 &
-    Gillon, M., et al.
     \href{https://ui.adsabs.harvard.edu/abs/2024NatAs...8..865G/abstract}{\textit{Detection of an Earth-sized exoplanet orbiting the nearby ultracool dwarf star SPECULOOS-3}},
-    Nature Astronomy, 8, 865--878 \\
+    Nature Astronomy, 8, 865--878 \newline
+    \authlist{Gillon, M., Pedersen, P. P., Rackham, B. V., Dransfield, G., Ducrot, E., Barkaoui, K., Burdanov, A. Y., Schroffenegger, U., Gómez Maqueo Chew, Y., Lederer, S. M., Alonso, R., Burgasser, A. J., Howell, S. B., Narita, N., de Wit, J., Demory, B.-O., Queloz, D., Triaud, A. H. M. J., Delrez, L., Jehin, E., Hooton, M. J., Garcia, L. J., \me, Murray, C. A., Pozuelos, F. J., Sebastian, D., Timmermans, M., Thompson, S. J., Zúñiga-Fernández, S., Aceituno, J., Aganze, C., Amado, P. J., Baycroft, T., Benkhaldoun, Z., Berardo, D., Bolmont, E., Clark, C. A., Davis, Y. T., Davoudi, F., de Beurs, Z. L., de Leon, J. P., Ikoma, M., Ikuta, K., Isogai, K., Fukuda, I., Fukui, A., Gerasimov, R., Ghachoui, M., Günther, M. N., Hasler, S., Hayashi, Y., Heng, K., Hu, R., Kagetani, T., Kawai, Y., Kawauchi, K., Kitzmann, D., Koll, D. D. B., Lendl, M., Livingston, J. H., Lyu, X., Meier Valdés, E. A., Mori, M., McCormac, J. J., Murgas, F., Niraula, P., Pallé, E., Plauchu-Frayn, I., Rebolo, R., Sabin, L., Schackey, Y., Schanche, N., Selsis, F., Sota, A., Stalport, M., Standing, M. R., Stassun, K. G., Tamura, M., Terada, Y., Theissen, C. A., Turbet, M., Van Grootel, V., Varas, R., Watanabe, N., Zong Lang, F.} \\
 
     October 2023 &
-    Triaud, A. H. M. J., et al.
     \href{https://ui.adsabs.harvard.edu/abs/2023MNRAS.525L..98T/abstract}{\textit{An M dwarf accompanied by a close-in giant orbiter with SPECULOOS}},
-    Monthly Notices of the Royal Astronomical Society: Letters, 525, L98--L104 \\
-
-    \end{longtable}
+    Monthly Notices of the Royal Astronomical Society: Letters, 525, L98--L104 \newline
+    \authlist{Triaud, A. H. M. J., Dransfield, G., Kagetani, T., Timmermans, M., Narita, N., Barkaoui, K., Hirano, T., Rackham, B. V., Mori, M., Baycroft, T., Benkhaldoun, Z., Burgasser, A. J., Caldwell, D. A., Collins, K. A., Davis, Y. T., Delrez, L., Demory, B.-O., Ducrot, E., Fukui, A., \me, Jehin, E., García, L. J., Ghachoui, M., Gillon, M., Gómez Maqueo Chew, Y., Hooton, M. J., Ikoma, M., Kawauchi, K., Kotani, T., Levine, A. M., Pallé, E., Pedersen, P. P., Pozuelos, F. J., Queloz, D., Scutt, O. J., Seager, S., Sebastian, D., Tamura, M., Thompson, S., Watanabe, N., de Wit, J., Winn, J. N., Zúñiga-Fernández, S.} \\
+\end{longtable}
 
 \section*{Conference proceedings}
-\begin{tabular}{L!{\vrule}R}
+\begin{longtable}{L!{\vrule}R}
+    August 2026 &
+    \href{https://doi.org/10.1117/12.3105437}{\textit{Astra: an open-source fully autonomous robotic observatory control software}},
+    Proceedings of the SPIE, Software and Cyberinfrastructure for Astronomy IX, arXiv:2607.12898 \newline
+    \authlist{Pedersen, P. P., Degen, D., Garcia, L., Schroffenegger, U., Sebastian, D., Zúñiga-Fernández, S., Demory, B.-O., Ducrot, E., Gillon, M., Hooton, M. J., \me, McCormac, J., Timmermans, M., Triaud, A. H. M. J., Queloz, D.} \\ % CHECK: add SPIE volume number
+
     August 2024 &
-    Zúñiga-Fernández, S., et al.\ 
     \href{https://ui.adsabs.harvard.edu/abs/2024SPIE13094E..13Z/abstract}{\textit{SPECULOOS: five years hunting terrestrial planets around ultra-cool dwarfs}},
-    Proceedings of the SPIE, 13094 \\ % CHECK: author position (not on arXiv)
+    Proceedings of the SPIE, 13094 \newline
+    \authlist{Zúñiga-Fernández, S., Gillon, M., Pedersen, P. P., Sebastian, D., Burdanov, A., Demory, B.-O., Triaud, A. H., de Wit, J., Jehin, E., Queloz, D., Garcia, L. J., Timmermans, M., Barkaoui, K., Baycroft, T., Davis, Y., Davoudi, F., Delrez, L., Ducrot, E., Gómez-Maqueo-Chew, Y., Hooton, M. J., \me, Rackham, B. V., Scott, M., Thompson, S., Yalçinkaya, S.} \\
 
     July 2024 &
-    Pedersen, P. P., et al.
     \href{https://ui.adsabs.harvard.edu/abs/2024SPIE13096E..3XP/abstract}{\textit{Infrared photometry with InGaAs detectors: first light with SPECULOOS}},
-    Proceedings of the SPIE, 13096 \\
-\end{tabular}
+    Proceedings of the SPIE, 13096 \newline
+    \authlist{Pedersen, P. P., Queloz, D. P., Garcia, L., Schacke, Y., Delrez, L., Demory, B.-O., Ducrot, E., Dransfield, G., Gillon, M., Hooton, M. J., \me, Jehin, E., Sebastian, D., Timmermans, M., Thompson, S., Triaud, A. H. J., de Wit, J., Zúñiga-Fernández, S.} \\
+\end{longtable}
 
 \end{document}
